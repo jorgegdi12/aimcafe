@@ -22,75 +22,130 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- HEADER
-        ================================================== -->
-        <header>
-        </header>
-        <!-- NAV
-        ================================================== -->
-          <nav class="navbar navbar-inverse">
-            <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Cambiar Navegacion</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="index.html" class="navbar-brand">Inicio</a></div>
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
 
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="productos.html">Hielo</a></li>
-                                <li><a href="productos.html">Agua potable</a></li>
-                                <li><a href="productos.html">Accesorios</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="contactos.html">Contactos</a></li>
-                    </ul>
-                </div>
-                </div>
-          </nav>
-        <!-- SLIDE
-        ================================================== -->
-        <section>
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
           <div class="container">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="img/slide_1.jpg" alt="slide1">
-                  </div>
-                  <div class="item">
-                    <img src="img/slide_2.jpg" alt="slide1">  
-                  </div>
-                  <div class="item">
-                    <img src="img/slide_3.jpg" alt="slide1">  
-                  </div>
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/header-bg.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/header-bg.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/header-bg.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
                   <!-- CONTENT
         ================================================== -->
+      <section class="fondo">
+        <div class="container">
+          <div class="row">
+            <div class="separacion col-lg-6">
+              <h1 class="intro"><span class="empresa">AIM CAFÉ</span> es una empresa familiar que nació como resultado de una tradición de ejercer el negocio de la comercialización del café durante muchos años en nuestras tierras que conforman  el  hermoso  eje cafetero colombiano ubicado a una altura entre 1.600 y 1.800 metros sobre el nivel del mar en la región central de Colombia características ideales para producir el café más suave del 
+mundo y la visión de crear una empresa que contribuya al crecimiento de la región y de las personas que habitan en ella.</h1>
+            </div>
+            <div class="separacion col-lg-3"><img class="img-responsive" src="img/cafe-colombia.jpg" alt=""></div>
+            <div class="separacion col-lg-3"><img class="img-responsive" src="img/recolector.jpg" alt=""></div>
+            <div class="col-lg-12">
+              <h1 class="intro">Comercializamos café verde 100% colombiano a todos los mercados del mundo y nos hemos caracterizado por brindar un café de excelente calidad digno de nuestra tierra colombiana permitiendo a sus clientes disfrutar del mejor café suave del mundo y por  el cumplimiento de los contratos pactados con nuestros clientes en el exterior.</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="titulos">
+                Nuestros Productos
+              </h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <img class="" src="img/excelso-ucq.png" alt="">
+              </div>
+              <div class="col-lg-3">
+                <img class="" src="img/excelso-ep.png" alt="">
+              </div>
+              <div class="col-lg-3">
+                <img class="" src="img/supremo-18.png" alt="">
+              </div>
+              <div class="col-lg-3">
+                <img class="" src="img/supremo-1718.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
                   <!--  FOOTER
         ================================================== -->
       
