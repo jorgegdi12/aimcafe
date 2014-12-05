@@ -61,7 +61,16 @@
 
       </div>
     </div>
-
+    <header>
+      <div class="container">
+      <div class="row">
+        <div class="logo col-lg-4">
+          <img class="img-responsive" src="img/logo.png" alt="">
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+    </header>
 
     <!-- Carousel
     ================================================== -->
@@ -187,19 +196,65 @@ mundo y la visión de crear una empresa que contribuya al crecimiento de la regi
               <p>
                 <span class="empresa">AIM CAFÉ</span> ha querido integrar una responsabilidad social a su proceso de comercialización permitiendo a sus clientes que ,además de disfrutar de un café suave colombiano estén vinculados indirectamente  con la clase social trabajadora más necesitada de nuestro país, intentando comprarles el café 100% colombiano a los pequeños productores que consagran su vida y ponen todo su amor en  sacar de sus parcelas el mejor grano para que sea consumido por sus clientes en el exterior y así tener el sustento de su entorno familiar.
               </p>
+              <img class="img-responsive" src="img/social.jpg" alt="">
             </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="titulos">
+                Contactos
+              </h2>
+          </div>
+          <div class="col-lg-12">
+            <p>Formulario solicitud muestras o cotizaciones</p>
+                      <form id="formcon" action="envia.php" method="post">
+                          <div class="form-group">
+                           <input type="text" name="name" class="form-control" value="Nombre" id="name" onblur="if (this.value == ''){this.value = 'Nombre'; }" onfocus="if (this.value == 'Nombre') {this.value = '';}" />
+                          </div>
+
+                          <div class="form-group">
+                           <input type="text" name="fijo" class="form-control" value="Telefono fijo" id="fijo"  onblur="if (this.value == ''){this.value = 'Telefono fijo'; }" onfocus="if (this.value == 'Telefono fijo') {this.value = '';}" />
+                           </div>
+                          <div class="form-group">
+                           <input type="text" name="celular" class="form-control" value="Telefono celular" id="celular"  onblur="if (this.value == ''){this.value = 'Telefono celular'; }" onfocus="if (this.value == 'Telefono celular') {this.value = '';}" />
+                           </div>
+                          <div class="form-group"> 
+                           <input type="text" name="ciudad" class="form-control" value="Ciudad" id="ciudad"  onblur="if (this.value == ''){this.value = 'Ciudad'; }" onfocus="if (this.value == 'Ciudad') {this.value = '';}" />
+                           </div>
+                          <div class="form-group">
+                           <input type="text" name="pais" class="form-control" value="País" id="pais"  onblur="if (this.value == ''){this.value = 'País'; }" onfocus="if (this.value == 'País') {this.value = '';}" />
+                           </div>
+                          <div class="form-group">  
+                           <input type="text" name="email" class="form-control" value="Email" id="email"  onblur="if (this.value == ''){this.value = 'Email'; }" onfocus="if (this.value == 'Email') {this.value = '';}" />
+                           </div>
+                           <div class="form-group">  
+                           <input type="text" name="cantidad" class="form-control" value="Cantidad de interés (sacos de 70 Kg)" id="cantidad"  onblur="if (this.value == ''){this.value = 'Cantidad'; }" onfocus="if (this.value == 'Cantidad') {this.value = '';}" />
+                           </div>
+                          <div class="form-group">
+                           <textarea cols="20" rows="10" class="form-control" name="message" id="message" onblur="if (this.value == ''){this.value = 'Mensaje'; }" onfocus="if (this.value == 'Mensaje') {this.value = '';}" >Mensaje</textarea>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-2 col-sm-10">
+                           <input type="submit" name="submit" value="Enviar" class="btn btn-warning" />
+                            </div>
+                          </div>
+                      </form>      
           </div>  
+        </div>  
         </div>
       </section>
 
                   <!--  FOOTER
         ================================================== -->
-      
-        <footer>
-          
-        </footer>
-        <br>
-
+        <footer class="fondo">
+          <div class="container">
+        <div class="footerf col-lg-12">
+          <p>
+            Carrera 23# 14-44  telefonos  00576-3459296 -005733113442838 Pereira - Colombia
+          </p>
+        </div>
+      </div>
+        </footer>  
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
          <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
