@@ -79,6 +79,8 @@ textarea {
 }
 .titulos{
   color:#C71519;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
 }
 .empresa{
   color:#C71519;
@@ -90,24 +92,48 @@ textarea {
   margin-top: 1em;
 }
 .footerf{
-  background-color: #C71519;
   color: #fff;
   padding: 1em;
+  background: rgba(199,21,25,0.5);
+background: -moz-linear-gradient(left, rgba(199,21,25,0.5) 0%, rgba(199,21,24,0.5) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,21,25,0.5)), color-stop(100%, rgba(199,21,24,0.5)));
+background: -webkit-linear-gradient(left, rgba(199,21,25,0.5) 0%, rgba(199,21,24,0.5) 100%);
+background: -o-linear-gradient(left, rgba(199,21,25,0.5) 0%, rgba(199,21,24,0.5) 100%);
+background: -ms-linear-gradient(left, rgba(199,21,25,0.5) 0%, rgba(199,21,24,0.5) 100%);
+background: linear-gradient(to right, rgba(199,21,25,0.5) 0%, rgba(199,21,24,0.5) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c71519', endColorstr='#c71518', GradientType=1 );
+margin-bottom: 1em;
 }
 .logo{
   position: absolute;
   z-index: 30;
+  width: 100%;
   top: 5em;
+}
+.imagen{
+  width: 35%;
+  float: left;
+}
+.sociales{
+  width: 20%;
+  float: right;
+  text-align: center;;
 }
 .cafecolombia{
   font-size: 1.9em;
 }
-.redes{
-  margin-right: 2.8em;
+.face{
+  margin-right: 2em;
   margin-bottom: 1em;
 }
-.redes:hover{
+.face:hover{
  opacity: 0.5;
+}
+.you{
+  margin: 0em 0em 1em 1em;
+}
+.you:hover{
+  opacity: 0.5;
 }
 .color{
   color:#fff;
@@ -119,6 +145,13 @@ background: -o-linear-gradient(left, rgba(27,54,8,0.61) 0%, rgba(27,54,8,0.61) 1
 background: -ms-linear-gradient(left, rgba(27,54,8,0.61) 0%, rgba(27,54,8,0.61) 100%);
 background: linear-gradient(to right, rgba(27,54,8,0.61) 0%, rgba(27,54,8,0.61) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3608', endColorstr='#1b3608', GradientType=1 );
+}
+.sepaf{
+  margin-top: 0.7em;
+  font-size: 0.9em
+}
+.spaciologo{
+  margin-top: 1.4em;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -189,7 +222,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3608', end
 .caption{
   width: 35%;
   text-align: right;
-  margin-left: 34em;
+  float: right;
   padding: 0.5em;
   background: rgba(104,26,10,0.5);
   background: -moz-linear-gradient(left, rgba(104,26,10,0.5) 0%, rgba(104,26,10,0.5) 100%);
@@ -218,6 +251,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3608', end
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.spacio{
+    margin-bottom: 1em;
+}
+.sociales{
+  width: 40%;
+  float: right;
+  text-align: center;
+  padding-right: 1em;
+}
+.imagen{
+  width: 25%;
+  float: left;
+}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+.spacio{
+    margin-bottom: 1em;
+}
+}
+
 
 @media (min-width: 768px) {
 
@@ -249,6 +321,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3608', end
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
+}
+
+
 
 /* ==========================================================================
    Helper classes
